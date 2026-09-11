@@ -4,14 +4,18 @@ import { HiMenu } from "react-icons/hi";
 
 const Navbar = () => {
     return (
-        <nav className="sticky top-0 z-50 bg-white border border-gray-300 px-4 py-3">
+        <nav className="sticky top-0 z-50 bg-white border-b border-gray-200 px-4 py-3">
             <div className="max-w-7xl mx-auto flex items-center justify-between">
                 
                 <div className="dropdown lg:hidden">
-                    <div tabIndex={0} role="button" className="text-2xl text-gray-700">
+                    <div
+                        tabIndex={0}
+                        role="button"
+                        className="text-2xl text-gray-700">
                         <HiMenu />
                     </div>
-                    <ul tabIndex={0}
+                    <ul
+                        tabIndex={0}
                         className="dropdown-content mt-3 z-[1] p-3 shadow bg-white rounded-box w-48 flex flex-col gap-3 text-sm font-medium border border-gray-200">
                         <li>
                             <a href="#" className="text-pink-500 font-semibold">
@@ -34,21 +38,25 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex items-center">
-                    <img
-                        src={Logo}
-                        alt="DevStack Logo"
-                        className="h-9 w-auto object-contain"
-                    />
+                    <img src={Logo} alt="DevStack Logo" className="h-9 w-auto object-contain"/>
                 </div>
 
                 <div className="hidden lg:flex gap-6 text-sm font-medium">
                     <a href="#" className="text-pink-500 font-semibold">
                         Home
                     </a>
-                    <a href="#">Technologies</a>
-                    <a href="#">Projects</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
+                    <a href="#" className="hover:text-pink-500 transition-colors">
+                        Technologies
+                    </a>
+                    <a href="#" className="hover:text-pink-500 transition-colors">
+                        Projects
+                    </a>
+                    <a href="#" className="hover:text-pink-500 transition-colors">
+                        About
+                    </a>
+                    <a href="#" className="hover:text-pink-500 transition-colors">
+                        Contact
+                    </a>
                 </div>
 
                 <div className="flex items-center gap-3 text-sm font-medium">
