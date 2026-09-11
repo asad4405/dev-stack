@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "../../public/logo-text.png";
 import { HiMenu } from "react-icons/hi";
 

@@ -1,5 +1,3 @@
-import React from "react";
-
 const Banner = () => {
     return (
         <section className="max-w-7xl mx-auto px-4 py-8 md:py-16 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 text-center lg:text-left">
