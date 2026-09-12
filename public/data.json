@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "React",
+    "image": "https://cdn.simpleicons.org/react/61DAFB",
+    "badge": "Popular",
+    "badgeColor": "bg-sky-50 text-sky-600",
+    "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
+    "category": "Frontend",
+    "level": "Beginner-Friendly",
+    "rating": 4.9
+  },
+  {
+    "id": 2,
+    "name": "Vue.js",
+    "image": "https://cdn.simpleicons.org/vuedotjs/4FC08D",
+    "badge": "Versatile",
+    "badgeColor": "bg-emerald-50 text-emerald-600",
+    "description": "An approachable, performant, and versatile framework for building web user interfaces.",
+    "category": "Frontend",
+    "level": "Beginner-Friendly",
+    "rating": 4.8
+  },
+  {
+    "id": 3,
+    "name": "Svelte",
+    "image": "https://cdn.simpleicons.org/svelte/FF3E00",
+    "badge": "Fast",
+    "badgeColor": "bg-orange-50 text-orange-600",
+    "description": "Cybernetically enhanced web apps with compile-time reactivity and zero virtual DOM overhead.",
+    "category": "Frontend",
+    "level": "Intermediate",
+    "rating": 4.8
+  },
+  {
+    "id": 4,
+    "name": "Next.js",
+    "image": "https://cdn.simpleicons.org/nextdotjs/000000",
+    "badge": "SSR / Edge",
+    "badgeColor": "bg-purple-50 text-purple-600",
+    "description": "The React framework for full-stack web applications with hybrid static & server rendering.",
+    "category": "Frontend",
+    "level": "Intermediate",
+    "rating": 4.9
+  },
+  {
+    "id": 5,
+    "name": "Node.js",
+    "image": "https://cdn.simpleicons.org/nodedotjs/5FA04E",
+    "badge": "Standard",
+    "badgeColor": "bg-green-50 text-green-600",
+    "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
+    "category": "Backend",
+    "level": "Intermediate",
+    "rating": 4.8
+  },
+  {
+    "id": 6,
+    "name": "PostgreSQL",
+    "image": "https://cdn.simpleicons.org/postgresql/4169E1",
+    "badge": "Top SQL",
+    "badgeColor": "bg-blue-50 text-blue-600",
+    "description": "A powerful, open-source object-relational database system with proven reliability.",
+    "category": "Database",
+    "level": "Intermediate",
+    "rating": 4.9
+  },
+  {
+    "id": 7,
+    "name": "Redis",
+    "image": "https://cdn.simpleicons.org/redis/FF4438",
+    "badge": "Cache",
+    "badgeColor": "bg-red-50 text-red-600",
+    "description": "In-memory data structure store used as a high-speed database, cache, and message broker.",
+    "category": "Database",
+    "level": "Intermediate",
+    "rating": 4.8
+  },
+  {
+    "id": 8,
+    "name": "JavaScript",
+    "image": "https://cdn.simpleicons.org/javascript/F7DF1E",
+    "badge": "Ubiquitous",
+    "badgeColor": "bg-amber-50 text-amber-600",
+    "description": "The versatile, ubiquitous scripting language powering dynamic behavior across the web.",
+    "category": "Language",
+    "level": "Beginner-Friendly",
+    "rating": 4.9
+  },
+  {
+    "id": 9,
+    "name": "TypeScript",
+    "image": "https://cdn.simpleicons.org/typescript/3178C6",
+    "badge": "Essential",
+    "badgeColor": "bg-sky-50 text-sky-600",
+    "description": "A strongly typed programming language that builds on JavaScript for robust tooling.",
+    "category": "Language",
+    "level": "Intermediate",
+    "rating": 4.9
+  },
+  {
+    "id": 10,
+    "name": "Java",
+    "image": "https://cdn.simpleicons.org/openjdk/007396",
+    "badge": "Robust",
+    "badgeColor": "bg-sky-50 text-sky-600",
+    "description": "A secure, object-oriented programming language designed for portability and scale.",
+    "category": "Language",
+    "level": "Intermediate",
+    "rating": 4.8
+  },
+  {
+    "id": 11,
+    "name": "Tailwind CSS",
+    "image": "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+    "badge": "Modern",
+    "badgeColor": "bg-teal-50 text-teal-600",
+    "description": "A utility-first CSS framework packed with classes that can be composed to build custom UI.",
+    "category": "Styling",
+    "level": "Beginner-Friendly",
+    "rating": 4.9
+  },
+  {
+    "id": 12,
+    "name": "Docker",
+    "image": "https://cdn.simpleicons.org/docker/2496ED",
+    "badge": "Containers",
+    "badgeColor": "bg-blue-50 text-blue-600",
+    "description": "A platform designed to build, share, and run containerized applications reliably.",
+    "category": "DevOps",
+    "level": "Intermediate",
+    "rating": 4.9
+  }
+]
