@@ -38,7 +38,8 @@ export default function Technologies({
                 </div>
 
                 {/*  Stack  */}
-                <SelectedTechnologies />
+                <SelectedTechnologies selectedTechnologies={selectedTechnologies}
+                    setSelectedTechnologies={setSelectedTechnologies}/>
             </div>
         </section>
     );
