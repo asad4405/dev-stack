@@ -1,22 +1,14 @@
-import { useState, type Dispatch, type SetStateAction } from "react";
 import type { TechnologyType } from "../../types/TechnologyType";
-import { toast } from "react-toastify";
 
 export interface TechnologyProps {
     technology: TechnologyType;
     selectedTechnologies: TechnologyType[];
-    setSelectedTechnologies: Dispatch<SetStateAction<TechnologyType[]>>;
+    onAddTechnology: (tech: TechnologyType) => void;
 }
 
-export default function Technology({ technology,selectedTechnologies,setSelectedTechnologies }: TechnologyProps) {
+export default function Technology({ technology,selectedTechnologies,onAddTechnology }: TechnologyProps) {
     const isSelected = selectedTechnologies.find(tech => tech.id === technology.id);
 
-    function handleTechnology(){
-        if(!isSelected){
-            setSelectedTechnologies([...selectedTechnologies, technology]);
-            toast.success(`${technology.name} Added to Stack`);
-        }
-    }
     return (
         <div className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
             <div>
@@ -50,7 +42,7 @@ export default function Technology({ technology,selectedTechnologies,setSelected
                         <span className="text-amber-400">★</span> {technology.rating}
                     </div>
                 </div>
-                <button onClick={() => handleTechnology()} className="btn btn-neutral btn-sm w-full mt-4 normal-case font-semibold" disabled={isSelected ? true : false}>
+                <button onClick={() => onAddTechnology(technology)} className="btn btn-neutral btn-sm w-full mt-4 normal-case font-semibold" disabled={isSelected ? true : false}>
                    {isSelected ? 'Selected Stack' : 'Add to Stack'} 
                 </button>
             </div>

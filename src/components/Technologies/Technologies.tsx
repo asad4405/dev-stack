@@ -1,7 +1,8 @@
-import React, { use, useState } from "react";
 import type { TechnologyType } from "../../types/TechnologyType";
 import Technology from "./Technology";
 import SelectedTechnologies from "./SelectedTechnologies";
+import { toast } from "react-toastify";
+import { use, useState } from "react";
 export interface TechnologiesProps {
     technologiesPromise: Promise<TechnologyType[]>;
 }
@@ -16,6 +17,7 @@ export default function Technologies({
         const exists = selectedTechnologies.find(technology => technology.id === tech.id);
         if(!exists){
             setSelectedTechnologies([...selectedTechnologies,tech])
+            toast.success(`${tech.name} Added to Stack`);
         }
     }
     return (
@@ -34,7 +36,7 @@ export default function Technologies({
 
             <div className="flex flex-col lg:flex-row gap-8 items-start">
                 <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 w-full">
-                    {technologies.map(technology => <Technology key={technology.id} technology={technology} selectedTechnologies={selectedTechnologies} setSelectedTechnologies ={setSelectedTechnologies} /> )}
+                    {technologies.map(technology => <Technology key={technology.id} technology={technology} selectedTechnologies={selectedTechnologies} onAddTechnology={handleAddTechnology} /> )}
                 </div>
 
                 {/*  Stack  */}
