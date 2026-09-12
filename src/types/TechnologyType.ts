@@ -1,4 +1,4 @@
-export interface TechonologyType{
+export interface TechnologyType{
     id: number;
     name: string;
     image: string;
