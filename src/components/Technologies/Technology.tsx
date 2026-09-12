@@ -1,10 +1,22 @@
+import { useState, type Dispatch, type SetStateAction } from "react";
 import type { TechnologyType } from "../../types/TechnologyType";
+import { toast } from "react-toastify";
 
 export interface TechnologyProps {
     technology: TechnologyType;
+    selectedTechnologies: TechnologyType[];
+    setSelectedTechnologies: Dispatch<SetStateAction<TechnologyType[]>>;
 }
 
-export default function Technology({ technology }: TechnologyProps) {
+export default function Technology({ technology,selectedTechnologies,setSelectedTechnologies }: TechnologyProps) {
+    const isSelected = selectedTechnologies.find(tech => tech.id === technology.id);
+
+    function handleTechnology(){
+        if(!isSelected){
+            setSelectedTechnologies([...selectedTechnologies, technology]);
+            toast.success('Stack Added Success');
+        }
+    }
     return (
         <div className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
             <div>
@@ -12,7 +24,7 @@ export default function Technology({ technology }: TechnologyProps) {
                     <div className="w-10 h-10 rounded-xl bg-gray-50 p-2 flex items-center justify-center">
                         <img
                             src={technology.image}
-                            alt="React"
+                            alt={technology.name}
                             className="w-full h-full object-contain"
                         />
                     </div>
@@ -38,8 +50,8 @@ export default function Technology({ technology }: TechnologyProps) {
                         <span className="text-amber-400">★</span> {technology.rating}
                     </div>
                 </div>
-                <button className="btn btn-neutral btn-sm w-full mt-4 normal-case font-semibold">
-                    Add to Stack
+                <button onClick={() => handleTechnology()} className="btn btn-neutral btn-sm w-full mt-4 normal-case font-semibold" disabled={isSelected ? true : false}>
+                   {isSelected ? 'Selected Stack' : 'Add to Stack'} 
                 </button>
             </div>
         </div>
