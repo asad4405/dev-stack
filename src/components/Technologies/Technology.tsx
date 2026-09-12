@@ -14,7 +14,7 @@ export default function Technology({ technology,selectedTechnologies,setSelected
     function handleTechnology(){
         if(!isSelected){
             setSelectedTechnologies([...selectedTechnologies, technology]);
-            toast.success('Stack Added Success');
+            toast.success(`${technology.name} Added to Stack`);
         }
     }
     return (
